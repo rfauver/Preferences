@@ -1,0 +1,4 @@
+[
+  {"keys": ["command+shift+c"], "command": "copy_path" },
+  {"keys": ["command+shift+e"], "command": "insert_snippet","args": {"contents": "binding.pry"} }
+]

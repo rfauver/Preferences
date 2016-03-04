@@ -1,0 +1,39 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"binary_file_patterns":
+	[
+		"dist/*",
+		"node_modules/*",
+		"tmp/*",
+		"vendor/*",
+		"log/*",
+		"yardoc/",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
+	"color_scheme": "Packages/User/SublimeLinter/iPlastic (SL).tmTheme",
+	"copy_with_empty_selection": false,
+	"ensure_newline_at_eof_on_save": true,
+	"ignored_packages":
+	[
+		"GitGutter-Edge",
+		"Vintage"
+	],
+	"save_on_focus_lost": true,
+	"scroll_past_end": true,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": "false"
+}
