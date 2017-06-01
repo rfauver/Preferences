@@ -8,12 +8,6 @@ if defined?(PryByebug)
   Pry.commands.alias_command 'f', 'finish'
 end
 
-begin
-  require 'awesome_print'
-  Pry.config.print = proc { |output, value| output.puts value.ai }
-rescue LoadError => err
-  puts "no awesome_print :("
+if defined?(PryRails::RAILS_PROMPT)
+  Pry.config.prompt = PryRails::RAILS_PROMPT
 end
-
-require 'factory_girl'
-FactoryGirl.find_definitions
