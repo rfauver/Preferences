@@ -8,9 +8,9 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 alias rc="bin/rails c"
-alias pc="bin/scripted -p"
-alias gpc="heroku run rails c -a scripted-billing-production"
-alias gspec="cd ~/billing_goat && bin/rspec -t ~bt"
+alias frc='foreman run spring rails console'
+alias spec='foreman run spring rspec'
+alias specp='foreman run spring rspec $(pbpaste)'
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
