@@ -1,4 +1,24 @@
 [
-  {"keys": ["command+shift+c"], "command": "copy_path" },
-  {"keys": ["command+shift+e"], "command": "insert_snippet","args": {"contents": "binding.pry"} }
+  { "keys": ["command+shift+c"], "command": "copy_path" },
+  { "keys": ["command+shift+a"], "command": "expand_region" },
+  { "keys": ["escape"], "command": "deselect", "context":
+    [{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }]
+  },
+
+  // insert debugger/binding.pry
+  {
+    "keys": ["command+shift+e"], "command": "insert_snippet",
+    "args": { "contents": "binding.pry" },
+    "context": [{ "key": "selector", "operator": "equal", "operand": "source.ruby" }]
+  },
+  {
+    "keys": ["command+shift+e"], "command": "insert_snippet",
+    "args": { "contents": "debugger" },
+    "context": [{ "key": "selector", "operator": "equal", "operand": "source.coffee" }]
+  },
+  {
+    "keys": ["command+shift+e"], "command": "insert_snippet",
+    "args": { "contents": "debugger" },
+    "context": [{ "key": "selector", "operator": "equal", "operand": "source.js" }]
+  },
 ]
