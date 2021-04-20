@@ -5,13 +5,19 @@
 	],
 	"installed_packages":
 	[
-		"AdvancedNewFile",
+		"A File Icon",
 		"All Autocomplete",
+		"Deselect",
 		"Git",
 		"GitGutter",
+		"JsPrettier",
+		"JSX",
 		"Package Control",
+		"SCSS",
 		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeLinter-ruby"
+		"SublimeLinter-eslint",
+		"SublimeLinter-ruby",
+		"TypeScript"
 	]
 }

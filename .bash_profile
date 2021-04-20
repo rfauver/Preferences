@@ -1,7 +1,6 @@
 eval "$(rbenv init -)"
 export PGDATA="/usr/local/var/postgres"
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+
 export EDITOR="subl -w"
 export BUNDLER_EDITOR="subl"
 if [ -f ~/.git-completion.bash ]; then
@@ -11,6 +10,7 @@ alias rc="bin/rails c"
 alias frc='foreman run spring rails console'
 alias spec='foreman run spring rspec'
 alias specp='foreman run spring rspec $(pbpaste)'
+alias gitforce='git add . && git commit --amend --no-edit && git push --force-with-lease'
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
